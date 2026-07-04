@@ -1,0 +1,70 @@
+# 📒 My Notebook — Flask Notes App
+
+A full-stack notes management web application built with Python and Flask.
+
+## 🚀 Features
+- Create, Read, Update, Delete notes (CRUD)
+- SQLite database for persistent storage
+- REST API backend with proper HTTP status codes
+- Real-time search across titles and content
+- Clean dark-themed responsive UI
+- Character limit validation on inputs
+- Confirmation modal before deleting
+
+## 🛠️ Tech Stack
+| Layer    | Technology          |
+|----------|---------------------|
+| Backend  | Python 3, Flask     |
+| Database | SQLite (via sqlite3)|
+| Frontend | HTML, CSS, JS (Vanilla) |
+| API      | REST (JSON)         |
+
+## 📁 Project Structure
+```
+notes_app/
+├── app.py                  # Flask backend + REST API
+├── notes.db                # SQLite database (auto-created)
+├── templates/
+│   └── index.html          # Frontend UI
+└── README.md
+```
+
+## ⚙️ How to Run
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/my-notebook.git
+cd my-notebook
+
+# 2. Create virtual environment
+python -m venv venv
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # Mac/Linux
+
+# 3. Install dependencies
+pip install flask
+
+# 4. Run the app
+python app.py
+
+# 5. Open in browser
+http://127.0.0.1:5000
+```
+
+## 🔗 API Endpoints
+
+| Method | Endpoint            | Description       |
+|--------|---------------------|-------------------|
+| GET    | /api/notes          | Get all notes     |
+| POST   | /api/notes          | Create a note     |
+| GET    | /api/notes/<id>     | Get one note      |
+| PUT    | /api/notes/<id>     | Update a note     |
+| DELETE | /api/notes/<id>     | Delete a note     |
+| GET    | /api/notes/search?q=| Search notes      |
+
+## 📚 What I Learned
+- Building REST APIs with Flask
+- SQLite database design and queries
+- Connecting frontend to backend using fetch()
+- HTTP methods and status codes (200, 201, 400, 404, 409)
+- CRUD operations end to end
