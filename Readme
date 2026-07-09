@@ -1,38 +1,41 @@
-# Digital Notes App
+# My Notebook - Flask Notes App
 
-A simple notes management web application built using **Python, Flask, and SQLite**.
+A simple notes application built using Python, Flask, and SQLite.
 
-## Features
-- Create, update, and delete notes
-- Search notes
-- SQLite database
-- REST API
-- Responsive UI
+## Live Demo
+https://digital-notes-app-2iua.onrender.com
+
+> Note: The first load may take 30–50 seconds because it is hosted on Render's free plan.
 
 ## Tech Stack
 - Python
 - Flask
 - SQLite
-- HTML, CSS, JavaScript
+- HTML
+- CSS
+- JavaScript
+- Render
 
-## Run the Project
+## Features
+- Create, Read, Update, and Delete notes
+- REST API
+- Real-time search
+- Dark/Light theme
+- Live deployment on Render
+
+## Run Locally
 
 ```bash
 git clone https://github.com/JyothiPeddireddy/Digital_Notes_App.git
 cd Digital_Notes_App
-pip install flask
+pip install -r requirements.txt
 python app.py
 ```
 
-Open: `http://127.0.0.1:5000`
+## Current Limitation
+- Uses SQLite, so data may reset when the free hosting server restarts.
 
-## What I Learned
-- Flask REST APIs
-- CRUD operations
-- SQLite database
-- Frontend and backend integration
-
-
-## 🌐 Live Demo
-https://digital-notes-app-2iua.onrender.com
-
+## Future Improvements
+- Migrate to PostgreSQL
+- Add user authentication
+- Add note categories
